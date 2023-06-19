@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\KARTHIK REDDY\AppData\Local\Temp\testng-eclipse--1940182039\testng-customsuite.xml</span>
+                    <span>C:\Users\KARTHIK REDDY\AppData\Local\Temp\testng-eclipse-1589565814\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,33 +129,13 @@
                   <a name="test1">
                   </a> <!-- test1 -->
                   <span class="method-name">test1</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;oxd-icon bi-plus oxd-button-icon&apos;]&quot;}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+                  <div class="stack-trace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;div&quot;
 Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c615838b56a400c7c058903066e2ca65, findElement {using=xpath, value=//i[@class=&apos;oxd-icon bi-plus oxd-button-icon&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\KARTHI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52620}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52620/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c615838b56a400c7c058903066e2ca65
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at pages.Userdashboardpage.&lt;init&gt;(Userdashboardpage.java:17)
-	at tests.LoginTest.test1(LoginTest.java:28)
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:49)
+	at pages.Adduser.user(Adduser.java:20)
+	at tests.LoginTest.test1(LoginTest.java:37)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -193,7 +173,7 @@ Session ID: c615838b56a400c7c058903066e2ca65
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\KARTHIK REDDY\AppData\Local\Temp\testng-eclipse--1940182039\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\KARTHIK REDDY\AppData\Local\Temp\testng-eclipse-1589565814\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -246,12 +226,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test1')
 data.setCell(0, 2, 'tests.LoginTest')
-data.setCell(0, 3, 28006);
+data.setCell(0, 3, 46541);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->

@@ -1,8 +1,11 @@
 package tests;
 
+
+
 import org.testng.annotations.Test;
 
 import base.Base;
+import pages.Adduser;
 import pages.Homepage;
 import pages.LoginPage;
 import pages.Userdashboardpage;
@@ -21,13 +24,22 @@ public class LoginTest extends Base {
 		Thread.sleep(5000);
 
 		Homepage hp = new Homepage();
-//		String actualPageHeaderText = hp.getpageHeader();
-//		Assert.assertEquals(actualPageHeaderText, "Dashboard", "Dashboard page title page not match");
-		Thread.sleep(6000);
+
+		Thread.sleep(4000);
 		hp.clickadmin();
+		Thread.sleep(4000);
 		Userdashboardpage ud = new Userdashboardpage();
-		Thread.sleep(6000);
+		Thread.sleep(4000);
 		ud.adduser();
+		Thread.sleep(4000);
+		Adduser ad= new Adduser();
+		Thread.sleep(4000);
+		ad.user();
+		
+		
+//		EditUser ed = new EditUser();
+//		Thread.sleep(6000);
+//		ed.useredit();
 
 //		Thread.sleep(6000);
 //		hp.clickProfileIcon();

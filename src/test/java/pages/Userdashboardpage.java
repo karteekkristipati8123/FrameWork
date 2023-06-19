@@ -14,7 +14,7 @@ import base.Base;
 public class Userdashboardpage extends Base{
 	
 
-	WebElement adduserbutton = driver.findElement(By.xpath("//i[@class='oxd-icon bi-plus oxd-button-icon']"));
+	WebElement adduserbutton = driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div[2]/div[1]/button/i"));
 	
 	public void adduser() throws InterruptedException
 	{
