@@ -11,17 +11,29 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import base.Base;
 
 public class Homepage extends Base{
-	WebElement adminbt = new WebDriverWait(driver, Duration.ofSeconds(10))
-        .until(ExpectedConditions.elementToBeClickable(By.xpath("//ul[@class='oxd-main-menu']//li[1]//span")));
-
-
-	public void clickadmin()
-	{
-		adminbt.click();
-	}
+//	WebElement admintab = new WebDriverWait(driver, Duration.ofSeconds(10))
+//        .until(ExpectedConditions.elementToBeClickable(By.xpath("//ul[@class='oxd-main-menu']//li[1]//span")));
+//	WebElement pimtab = new WebDriverWait(driver, Duration.ofSeconds(10))
+//	        .until(ExpectedConditions.elementToBeClickable(By.xpath("//ul[@class='oxd-main-menu']//li[2]//span")));
+	WebElement livtab = new WebDriverWait(driver, Duration.ofSeconds(10))
+	        .until(ExpectedConditions.elementToBeClickable(By.xpath("//ul[@class='oxd-main-menu']//li[3]//span")));
 	
-//         
-//                 
+	
+	
+//	public void clickadmin()
+//	{
+//		admintab.click();
+//	}
+	
+//	public void clickpim()
+//	{
+//		pimtab.click();
+//	}
+
+	public void leavetab()
+	{
+		livtab.click();
+	}
                  
       
              
