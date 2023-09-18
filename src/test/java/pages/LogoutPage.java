@@ -1,23 +1,28 @@
 package pages;
 
-import java.time.Duration;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
+
 
 import base.Base;
 
 public class LogoutPage extends Base{
 	
-
-	WebElement logout_ele = driver.findElement(By.xpath("//div//ul[@class='oxd-dropdown-menu']//li[4]//a"));
 	
-	public void clickLogout()
+
+	
+	public void clickLogout() throws InterruptedException
 	{
-		Duration timeout = null;
-		new WebDriverWait(driver,timeout).until(ExpectedConditions.visibilityOf(logout_ele));
+		Thread.sleep(7000);
+		WebElement log = driver.findElement(By.xpath("//div[@class='oxd-topbar-header-userarea']/ul/li//img"));
+
+		log.click();
+		Thread.sleep(7000);
+		WebElement logout_ele = driver.findElement(By.xpath("//ul[@class='oxd-dropdown-menu']/li/a[contains(text(),'Logout')]"));
+		
 		logout_ele.click();
 	}
 

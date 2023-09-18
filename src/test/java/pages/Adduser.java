@@ -28,25 +28,25 @@ public class Adduser extends Base {
 			}
 		}
 
-		driver.findElement(By.xpath("//div[@class='oxd-autocomplete-wrapper']//div//input")).sendKeys("ravi");
+		driver.findElement(By.xpath("//div[@class='oxd-autocomplete-wrapper']//div//input")).sendKeys("Dominic Chase");
 
-		driver.findElement(By.xpath("//label[contains( text(), 'Status')]/../following-sibling::div//i")).click();
-
-		List<WebElement> li2 = driver.findElements(By.xpath("//div[@role='listbox']/div"));
-
-		System.out.println(li.size());
-
-		for (WebElement el2 : li2) {
-			String val2= el2.getText();
-			
-
-			if (val2.equalsIgnoreCase("Enabled")) {
-				el2.click();
-				Thread.sleep(3000);
-//				break;
-			}
-		}
-		
+//		driver.findElement(By.xpath("//label[contains( text(), 'Status')]/../following-sibling::div//i")).click();
+//
+//		List<WebElement> li2 = driver.findElements(By.xpath("//div[@role='listbox']/div"));
+//
+//		System.out.println(li.size());
+//
+//		for (WebElement el2 : li2) {
+//			String val2= el2.getText();
+//			
+//
+//			if (val2.equalsIgnoreCase("Enabled")) {
+//				el2.click();
+//				Thread.sleep(3000);
+////				break;
+//			}
+//		}
+//		
 		driver.findElement(By.xpath("//*[@id='app']/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[4]/div/div[2]/input")).sendKeys("Ravi Kumar Reddy");
 	
 		driver.findElement(By.xpath("(//input[@type='password'])[1]")).sendKeys("Ravi123");
